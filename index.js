@@ -2,6 +2,7 @@ const express = require("express")
 const app = express()
 /* STARTING THE SERVER */
 
+app.use(express.json())
 //Stiching the route
 require("./routes/ideas.routes")(app)
 
