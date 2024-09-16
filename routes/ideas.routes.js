@@ -10,4 +10,9 @@ module.exports = (app) =>{
 
     app.post('/ideaApp/api/v1/ideas',idea_controller.createIdea)
 
+    app.put('/ideaApp/api/v1/ideas/:id',idea_controller.updateIdea)
+
+    app.delete('/ideaApp/api/v1/ideas/:id',idea_controller.deleteIdea)
+
+
 }
